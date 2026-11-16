@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desmond</title>
+    
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Grenze+Gotisch:wght@600;700&display=swap" rel="stylesheet">
+
+    <style>
+        
+        @font-face {
+            font-family: 'GrenzeGotischLocal';
+            src: url('GrenzeGotisch.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'MediumBoldLocal';
+            src: url('MediumBold.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'MediumBoldLocal', 'Segoe UI', Roboto, Arial, sans-serif;
+            font-weight: normal;
+        }
+
+        body {
+            /* Background gradasi abu-abu silver */
+            background: linear-gradient(135deg, #2c3034 0%, #495057 50%, #343a40 100%);
+            color: #f8f9fa;
+            line-height: 1.6;
+            padding: 20px 16px;
+            min-height: 100vh;
+        }
+
+        .container {
+            /* Lebar maksimal dibuat pas untuk tampilan vertikal */
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Bagian Header Simpel Tanpa Panel Background */
+        header {
+            text-align: center;
+            padding: 25px 10px 20px 10px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-family: 'GrenzeGotischLocal', 'Grenze Gotisch', serif;
+            font-size: 2.6rem;
+            color: #e9ecef;
+            letter-spacing: 2px;
+            text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            font-weight: normal;
+            line-height: 1.2;
+        }
+
+        /* Bagian List Card Tersusun Menurun (1 Kolom Penuh) */
+        .script-list {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            margin-bottom: 35px;
+        }
+
+        .card {
+            width: 100%;
+            background-color: #343a40;
+            border: 1px solid #adb5bd;
+            border-radius: 14px;
+            overflow: hidden;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: #ffffff;
+            box-shadow: 0 10px 25px rgba(206, 212, 218, 0.25);
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            background-color: #212529;
+            border-bottom: 1px solid #6c757d;
+            display: block;
+        }
+
+        .card-content {
+            padding: 22px;
+        }
+
+        .card-content h2 {
+            font-size: 1.45rem;
+            color: #e9ecef;
+            margin-bottom: 10px;
+        }
+
+        .card-content p {
+            font-size: 1.05rem;
+            color: #ced4da;
+        }
+
+        /* Bagian Tombol Discord Abu-abu Silver */
+        .discord-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .btn-discord {
+            display: block;
+            width: 100%;
+            background: linear-gradient(180deg, #e9ecef 0%, #adb5bd 100%);
+            color: #181a1b;
+            border: 1px solid #ffffff;
+            text-decoration: none;
+            font-size: 1.15rem;
+            padding: 16px 24px;
+            border-radius: 12px;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+        }
+
+        .btn-discord:hover {
+            background: linear-gradient(180deg, #ffffff 0%, #ced4da 100%);
+            transform: scale(1.02);
+            box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+        }
+
+        footer {
+            text-align: center;
+            color: #adb5bd;
+            font-size: 0.9rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header Simpel -->
+        <header>
+            <h1>Desmond script roblox</h1>
+        </header>
+
+        <!-- Daftar Script Menurun -->
+        <main class="script-list">
+            
+            <!-- List 1: Wheelbarrow -->
+            <div class="card">
+                <img src="wheelbarrow.png" alt="Wheelbarrow">
+                <div class="card-content">
+                    <h2>1. Wheelbarrow</h2>
+                    <p>A vehicle fling script for hangout map Hutan Voice Chat by SynthDan that you can troll by fling player with wheelbarrow gamepass. You can use fling with your wheelbarrow or other player will get fling automatically while equiped their wheelbarrow gamepass.</p>
+                </div>
+            </div>
+
+            <!-- List 2: Report -->
+            <div class="card">
+                <img src="report.png" alt="Report">
+                <div class="card-content">
+                    <h2>2. Report</h2>
+                    <p> Report script with automatic generating text for reporting the player who violates the rules of Roblox to get banned and work on any map.</p>
+                </div>
+            </div>
+
+            <!-- List 3: Universal JeyHub -->
+            <div class="card">
+                <img src="jeyhub.png" alt="Universal JeyHub">
+                <div class="card-content">
+                    <h2>3. Universal JeyHub</h2>
+                    <p>Universal Script special for Hutan Voice Chat with many features by JeyAttractive like player search engine, any utility, any movement features,copy avatar,forest fling, coin hack until lag server. This script will continue to be in development and will continue to be updated.</p>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- Tombol Link Discord -->
+        <div class="discord-section">
+            <a href="https://Discordapp.com/users/676373293082607616" target="_blank" class="btn-discord">
+            </a>
+        </div>
+
+        <footer>
+            &copy; 2026 Desmond. All rights reserved.
+        </footer>
+    </div>
+
+</body>
+</html>
